@@ -1,10 +1,14 @@
 var articles = [];
 
 function Article (opts) {
-  // TODO: Use the js object passed in to complete this constructor function:
+  // TODO: DONE- Use the js object passed in to complete this constructor function:
   // Save all the properties of 'opts' into 'this'
   this.author = opts.author;
-  //do the rest
+  this.title = opts.title;
+  this.category = opts.category;
+  this.publishedOn = opts.publishedOn;
+  this.body = opts.body;
+  this.authorUrl = opts.authorUrl;
 }
 
 Article.prototype.toHtml = function() {
